@@ -5,6 +5,11 @@ class String
     dimes = 0
     quaters = 0
 
+    until change < 25
+      change = change - 25
+      quarters += 1
+    end  
+
     until change < 10
       change = change - 10
       dimes += 1
@@ -39,7 +44,15 @@ class String
       end
     end
 
+    if quarters > 0
+      if quarters > 1
+        output = quarters.to_s + " quarters" + ", " + output
+      else
+        output = quarters.to_s + " quarter" + ", " + output
+      end
+    end
+
     output
-    
+
   end
 end
