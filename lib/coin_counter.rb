@@ -3,12 +3,12 @@ class String
     change = self.to_i
     nickels = 0
     dimes = 0
-    quaters = 0
+    quarters = 0
 
     until change < 25
       change = change - 25
       quarters += 1
-    end  
+    end
 
     until change < 10
       change = change - 10
