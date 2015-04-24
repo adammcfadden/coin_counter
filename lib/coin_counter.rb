@@ -1,5 +1,5 @@
 class String
-  define_method('coin_counter') do
+  define_method(:coin_counter) do
     change = self.to_i
     nickels = 0
     dimes = 0
